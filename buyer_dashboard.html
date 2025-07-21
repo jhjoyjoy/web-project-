@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buyer Dashboard - Market Info System</title>
+  <link rel="stylesheet" href="buyer_style.css" />
+</head>
+<body>
+  <nav class="sidebar">
+    <h2>Buyer Dashboard</h2>
+    <ul>
+      <li><a href="#welcome">Welcome</a></li>
+      <li><a href="#view-products">View Products</a></li>
+      <li><a href="#crop-listing">Crop Listing</a></li>
+      <li><a href="#order-history">Order History</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <section id="welcome">
+      <h1>Welcome, Buyer</h1>
+      <p>Explore and order fresh crops easily.</p>
+    </section>
+
+    <section id="view-products">
+      <h2>View Products</h2>
+      <input type="text" id="search-input" placeholder="Search products..." />
+      <select id="filter-category">
+        <option value="">All Categories</option>
+        <option value="fruits">Fruits</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="grains">Grains</option>
+      </select>
+
+      <ul id="product-list">
+        <!-- Products will be shown here -->
+      </ul>
+    </section>
+
+    <section id="crop-listing">
+      <h2>Crop Listing</h2>
+      <p>List of available crops with details.</p>
+      <!-- Crop listing details here -->
+    </section>
+
+    <section id="order-history">
+      <h2>Order History</h2>
+      <p>Your past orders will appear here.</p>
+      <!-- Order history details here -->
+    </section>
+  </main>
+
+  <script src="buyer_script.js"></script>
+</body>
+</html>

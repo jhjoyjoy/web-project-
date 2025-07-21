@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seller Dashboard - Market Info System</title>
+  <link rel="stylesheet" href="seller_style.css" />
+</head>
+<body>
+  <nav class="sidebar">
+    <h2>Seller Dashboard</h2>
+    <ul>
+      <li><a href="#welcome">Welcome</a></li>
+      <li><a href="#view-products">View Products</a></li>
+      <li><a href="#add-edit-product">Add/Edit Product</a></li>
+      <li><a href="#manage-orders">Manage Orders</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <section id="welcome">
+      <h1>Welcome, Seller</h1>
+      <p>Manage your products and orders easily.</p>
+    </section>
+
+    <section id="view-products">
+      <h2>Your Products</h2>
+      <p>List of products you have added.</p>
+      <!-- Product list table or cards can go here -->
+    </section>
+
+    <section id="add-edit-product">
+      <h2>Add or Edit Product</h2>
+      <form id="product-form">
+        <label for="product-name">Product Name:</label><br />
+        <input type="text" id="product-name" name="product-name" required /><br /><br />
+
+        <label for="product-price">Price:</label><br />
+        <input type="number" id="product-price" name="product-price" required /><br /><br />
+
+        <label for="product-description">Description:</label><br />
+        <textarea id="product-description" name="product-description" rows="4" required></textarea><br /><br />
+
+        <button type="submit">Save Product</button>
+      </form>
+    </section>
+
+    <section id="manage-orders">
+      <h2>Manage Orders</h2>
+      <p>View and update your orders.</p>
+      <!-- Orders table or details can go here -->
+    </section>
+  </main>
+
+  <script src="seller_script.js"></script>
+</body>
+</html>

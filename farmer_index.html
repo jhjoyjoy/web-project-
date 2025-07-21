@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Farmer Dashboard | AgriConnect</title>
+    <link rel="stylesheet" href="dashboard.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Welcome, Farmer!</h1>
+        <button id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </header>
+
+    <main class="dashboard-container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" id="viewPrice"><i class="fas fa-tags"></i> View Prices</a></li>
+                <li><a href="#" id="productList"><i class="fas fa-boxes"></i> Product List</a></li>
+                <li><a href="#" id="manageProduct"><i class="fas fa-edit"></i> Add/Edit Product</a></li>
+                <li><a href="#" id="weatherNews"><i class="fas fa-cloud-sun"></i> Weather News</a></li>
+            </ul>
+        </nav>
+
+        <section class="content" id="dashboardContent">
+            <h2>Select an option from the menu</h2>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
